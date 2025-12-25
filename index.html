@@ -14,8 +14,8 @@
         }
         
         body {
-            background-color: #f5f7fa;
-            color: #333;
+            background-color: #121212;
+            color: #e0e0e0;
             line-height: 1.6;
             padding: 20px;
             max-width: 1200px;
@@ -23,23 +23,25 @@
         }
         
         .container {
-            background-color: white;
+            background-color: #1e1e1e;
             border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
             overflow: hidden;
             margin-bottom: 30px;
         }
         
         header {
-            background: linear-gradient(135deg, #2c3e50, #4a6491);
-            color: white;
+            background: linear-gradient(135deg, #0d1b2a, #1b263b);
+            color: #ffffff;
             padding: 30px 20px;
             text-align: center;
+            border-bottom: 1px solid #2d3748;
         }
         
         h1 {
             font-size: 2.2rem;
             margin-bottom: 10px;
+            color: #ffffff;
         }
         
         .subtitle {
@@ -47,12 +49,13 @@
             opacity: 0.9;
             max-width: 800px;
             margin: 0 auto;
+            color: #cbd5e0;
         }
         
         .test-info {
             padding: 20px;
-            background-color: #f0f8ff;
-            border-bottom: 1px solid #e1e8f0;
+            background-color: #2d3748;
+            border-bottom: 1px solid #4a5568;
         }
         
         .info-text {
@@ -61,11 +64,11 @@
             justify-content: center;
             gap: 10px;
             font-size: 1rem;
-            color: #2c3e50;
+            color: #e2e8f0;
         }
         
         .info-text i {
-            color: #3498db;
+            color: #63b3ed;
         }
         
         .question-container {
@@ -75,7 +78,7 @@
         .question {
             margin-bottom: 30px;
             padding-bottom: 25px;
-            border-bottom: 1px dashed #ddd;
+            border-bottom: 1px dashed #4a5568;
         }
         
         .question:last-of-type {
@@ -85,14 +88,14 @@
         .question-title {
             font-size: 1.3rem;
             margin-bottom: 15px;
-            color: #2c3e50;
+            color: #e2e8f0;
             display: flex;
             align-items: flex-start;
             gap: 10px;
         }
         
         .question-number {
-            background-color: #3498db;
+            background-color: #3182ce;
             color: white;
             width: 30px;
             height: 30px;
@@ -113,21 +116,21 @@
             display: flex;
             align-items: center;
             padding: 15px;
-            background-color: #f9f9f9;
+            background-color: #2d3748;
             border-radius: 8px;
-            border: 1px solid #eaeaea;
+            border: 1px solid #4a5568;
             cursor: pointer;
             transition: all 0.2s;
         }
         
         .option:hover {
-            background-color: #edf5ff;
-            border-color: #c6daf0;
+            background-color: #374151;
+            border-color: #63b3ed;
         }
         
         .option.selected {
-            background-color: #e3f2fd;
-            border-color: #3498db;
+            background-color: #2c5282;
+            border-color: #3182ce;
         }
         
         .option input {
@@ -137,7 +140,7 @@
         
         .option-label {
             font-size: 1rem;
-            color: #444;
+            color: #e2e8f0;
         }
         
         .buttons {
@@ -145,8 +148,8 @@
             justify-content: center;
             gap: 20px;
             padding: 20px;
-            background-color: #f8f9fa;
-            border-top: 1px solid #eaeaea;
+            background-color: #2d3748;
+            border-top: 1px solid #4a5568;
         }
         
         .btn {
@@ -163,24 +166,24 @@
         }
         
         .btn-submit {
-            background: linear-gradient(to right, #27ae60, #2ecc71);
+            background: linear-gradient(to right, #2d7d46, #38a169);
             color: white;
         }
         
         .btn-submit:hover {
-            background: linear-gradient(to right, #219653, #27ae60);
+            background: linear-gradient(to right, #276749, #2f855a);
             transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(39, 174, 96, 0.3);
+            box-shadow: 0 4px 8px rgba(56, 161, 105, 0.3);
         }
         
         .btn-reset {
-            background-color: #f8f9fa;
-            color: #6c757d;
-            border: 1px solid #dee2e6;
+            background-color: #4a5568;
+            color: #e2e8f0;
+            border: 1px solid #718096;
         }
         
         .btn-reset:hover {
-            background-color: #e9ecef;
+            background-color: #718096;
         }
         
         .result-container {
@@ -201,7 +204,7 @@
         
         .result-title {
             font-size: 2rem;
-            color: #2c3e50;
+            color: #e2e8f0;
             margin-bottom: 10px;
         }
         
@@ -212,60 +215,43 @@
             padding: 15px;
             border-radius: 10px;
             text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
         
         .yoksul {
-            background-color: #ffeaea;
-            color: #c0392b;
-            border-left: 6px solid #c0392b;
+            background: linear-gradient(135deg, #7b341e, #c53030);
+            color: #fed7d7;
+            border-left: 6px solid #c53030;
         }
         
         .alt-orta {
-            background-color: #fff4e6;
-            color: #e67e22;
-            border-left: 6px solid #e67e22;
+            background: linear-gradient(135deg, #744210, #ed8936);
+            color: #feebc8;
+            border-left: 6px solid #ed8936;
         }
         
         .orta {
-            background-color: #e8f4fc;
-            color: #2980b9;
-            border-left: 6px solid #2980b9;
+            background: linear-gradient(135deg, #2c5282, #4299e1);
+            color: #bee3f8;
+            border-left: 6px solid #4299e1;
         }
         
         .ust-orta {
-            background-color: #e8f7ef;
-            color: #27ae60;
-            border-left: 6px solid #27ae60;
+            background: linear-gradient(135deg, #276749, #48bb78);
+            color: #c6f6d5;
+            border-left: 6px solid #48bb78;
         }
         
         .zengin {
-            background-color: #f4ecf7;
-            color: #8e44ad;
-            border-left: 6px solid #8e44ad;
-        }
-        
-        .result-details {
-            background-color: #f8f9fa;
-            padding: 25px;
-            border-radius: 10px;
-            margin-top: 20px;
-            text-align: center;
-        }
-        
-        .result-details h3 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-        }
-        
-        .result-details p {
-            font-size: 1.2rem;
-            line-height: 1.8;
+            background: linear-gradient(135deg, #553c9a, #9f7aea);
+            color: #e9d8fd;
+            border-left: 6px solid #9f7aea;
         }
         
         .restart-btn {
             display: block;
             margin: 30px auto 0;
-            background: linear-gradient(to right, #3498db, #2c3e50);
+            background: linear-gradient(to right, #3182ce, #2c5282);
             color: white;
             padding: 15px 40px;
             border: none;
@@ -278,15 +264,16 @@
         
         .restart-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+            box-shadow: 0 4px 10px rgba(49, 130, 206, 0.3);
         }
         
         footer {
             text-align: center;
             padding: 20px;
-            color: #7f8c8d;
+            color: #a0aec0;
             font-size: 0.9rem;
             margin-top: 20px;
+            border-top: 1px solid #2d3748;
         }
         
         /* Mobil uyumluluk */
@@ -305,6 +292,7 @@
             
             .result-class {
                 font-size: 2.2rem;
+                padding: 12px;
             }
             
             .buttons {
@@ -327,8 +315,8 @@
                 padding: 15px 10px;
             }
             
-            .result-details {
-                padding: 15px;
+            .result-class {
+                font-size: 1.8rem;
             }
         }
     </style>
@@ -337,6 +325,7 @@
     <div class="container">
         <header>
             <h1>Sosyo-Ekonomik Sınıf Testi</h1>
+            <p class="subtitle">Bu test, yaşam ve çalışma koşullarınıza göre hangi sosyo-ekonomik sınıfta yer aldığınızı belirlemek için hazırlanmıştır. Lütfen her soruyu dikkatlice okuyarak size en uygun seçeneği işaretleyin.</p>
         </header>
         
         <div class="test-info">
@@ -459,7 +448,7 @@
                         </label>
                         <label class="option">
                             <input type="radio" name="q4" value="5">
-                            <span class="option-label">Yok</span>
+                            <span class="option-label">Yok, gelir kaynaklarım üzerinde tam kontrolüm var</span>
                         </label>
                     </div>
                 </div>
@@ -505,7 +494,7 @@
                         </label>
                         <label class="option">
                             <input type="radio" name="q6" value="2">
-                            <span class="option-label">Yüksek, riskler var</span>
+                            <span class="option-label">Yüksek, fiziksel riskler var</span>
                         </label>
                         <label class="option">
                             <input type="radio" name="q6" value="3">
@@ -517,7 +506,7 @@
                         </label>
                         <label class="option">
                             <input type="radio" name="q6" value="5">
-                            <span class="option-label">Çok düşük veya hiç yok</span>
+                            <span class="option-label">Çok düşük veya yok</span>
                         </label>
                     </div>
                 </div>
@@ -538,7 +527,7 @@
                         </label>
                         <label class="option">
                             <input type="radio" name="q7" value="3">
-                            <span class="option-label">Nadir bir şekilde, birkaç kez</span>
+                            <span class="option-label">Evet ama nadiren yaralandım</span>
                         </label>
                         <label class="option">
                             <input type="radio" name="q7" value="4">
@@ -604,7 +593,7 @@
                         </label>
                         <label class="option">
                             <input type="radio" name="q9" value="5">
-                            <span class="option-label">Hiç sorun değil, özel sağlık sigortalarım da var</span>
+                            <span class="option-label">Hiç sorun değil veya özel sağlık sigortam var</span>
                         </label>
                     </div>
                 </div>
@@ -625,11 +614,11 @@
                         </label>
                         <label class="option">
                             <input type="radio" name="q10" value="3">
-                            <span class="option-label">Karşılıyorum ama bütçemi ciddi bir şekilde sarsıyor</span>
+                            <span class="option-label">Karşılıyorum ama bütçemi ciddi şekilde sarsıyor</span>
                         </label>
                         <label class="option">
                             <input type="radio" name="q10" value="4">
-                            <span class="option-label">Sorunsuz karşılıyorum </span>
+                            <span class="option-label">Sorunsuz karşılıyorum</span>
                         </label>
                         <label class="option">
                             <input type="radio" name="q10" value="5">
@@ -685,8 +674,6 @@
             
             <div id="resultClass" class="result-class"></div>
             
-            <div class="result-details" id="resultDetails" style="display:none;"></div>
-            
             <button class="restart-btn" id="restartBtn">
                 <i class="fas fa-sync-alt"></i> Testi Yeniden Yap
             </button>
@@ -703,7 +690,6 @@
             const form = document.getElementById('socioEconomicTest');
             const resultContainer = document.getElementById('resultContainer');
             const resultClass = document.getElementById('resultClass');
-            const resultDetails = document.getElementById('resultDetails');
             const resetBtn = document.getElementById('resetBtn');
             const restartBtn = document.getElementById('restartBtn');
             const options = document.querySelectorAll('.option');
@@ -796,7 +782,7 @@
                 return totalScore;
             }
             
-            // Sınıf belirleme (sadece className ve class döner)
+            // Sınıf belirleme
             function determineClass(score) {
                 if (score <= 20) {
                     return {
@@ -830,11 +816,6 @@
             function showResult(result) {
                 resultClass.textContent = result.className;
                 resultClass.className = `result-class ${result.class}`;
-                
-                // Meslek / detay bölümü artık gösterilmeyecek
-                resultDetails.innerHTML = '';
-                resultDetails.style.display = 'none';
-                
                 resultContainer.style.display = 'block';
             }
         });

@@ -538,7 +538,7 @@
                         </label>
                         <label class="option">
                             <input type="radio" name="q7" value="3">
-                            <span class="option-label">nadir bir şekilde, birkaç kez</span>
+                            <span class="option-label">Nadir bir şekilde, birkaç kez</span>
                         </label>
                         <label class="option">
                             <input type="radio" name="q7" value="4">
@@ -685,7 +685,7 @@
             
             <div id="resultClass" class="result-class"></div>
             
-            <div class="result-details" id="resultDetails"></div>
+            <div class="result-details" id="resultDetails" style="display:none;"></div>
             
             <button class="restart-btn" id="restartBtn">
                 <i class="fas fa-sync-alt"></i> Testi Yeniden Yap
@@ -796,50 +796,45 @@
                 return totalScore;
             }
             
-            // Sınıf belirleme
+            // Sınıf belirleme (sadece className ve class döner)
             function determineClass(score) {
                 if (score <= 20) {
                     return {
                         className: "Derin Yoksul / Yoksul Sınıf",
-                        class: "yoksul",
-                        jobs: "Örnek meslekler: inşaat işçisi, mevsimlik tarım işçisi, kağıt toplayıcı, hurdacı, merdiven altı fabrika işçisi, sanayi işçisi, gündelikçi, hamal, sokak satıcısı, temizlik işçisi, tarla işçisi"
+                        class: "yoksul"
                     };
                 } else if (score <= 29) {
                     return {
                         className: "Alt-Orta Sınıf",
-                        class: "alt-orta",
-                        jobs: "Örnek meslekler: fabrika işçisi, belediye işçisi, kasiyer, garson"
+                        class: "alt-orta"
                     };
                 } else if (score <= 38) {
                     return {
                         className: "Orta Sınıf",
-                        class: "orta",
-                        jobs: "Örnek meslekler: öğretmen, polis, hemşire, memurlar"
+                        class: "orta"
                     };
                 } else if (score <= 47) {
                     return {
                         className: "Üst-Orta Sınıf",
-                        class: "ust-orta",
-                        jobs: "Örnek meslekler: mühendis, doktor, avukat, üst düzey yönetici, akademisyen, pilot, mimar, yönetici, danışman"
+                        class: "ust-orta"
                     };
                 } else {
                     return {
                         className: "Zengin Sınıf",
-                        class: "zengin",
-                        jobs: "Örnek meslekler: işveren, sermaye sahibi, yatırımcı, üst düzey CEO, büyük şirket sahibi, profesyonel yatırımcı, holding yöneticisi"
+                        class: "zengin"
                     };
                 }
             }
             
-            // Sonucu gösterme
+            // Sonucu gösterme (sadece sınıf adı gösterilir)
             function showResult(result) {
                 resultClass.textContent = result.className;
                 resultClass.className = `result-class ${result.class}`;
                 
-                let detailsHTML = `<h3>Sınıfınızda Yer Alan Bazı Meslekler</h3>`;
-                detailsHTML += `<p>${result.jobs}</p>`;
+                // Meslek / detay bölümü artık gösterilmeyecek
+                resultDetails.innerHTML = '';
+                resultDetails.style.display = 'none';
                 
-                resultDetails.innerHTML = detailsHTML;
                 resultContainer.style.display = 'block';
             }
         });

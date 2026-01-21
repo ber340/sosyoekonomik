@@ -374,6 +374,131 @@
             line-height: 1.7;
         }
         
+        /* Sınıf Bilgi Kutuları */
+        .class-info-container {
+            padding: 30px 20px;
+            background-color: rgba(25, 30, 45, 0.9);
+            margin-top: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(100, 150, 255, 0.1);
+        }
+        
+        .class-info-title {
+            font-size: 1.8rem;
+            color: #e3f2fd;
+            margin-bottom: 25px;
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(100, 150, 255, 0.3);
+        }
+        
+        .class-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .class-box {
+            background-color: rgba(35, 40, 60, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            border-left: 5px solid;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .class-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .yoksul-box {
+            border-left-color: #c2185b;
+        }
+        
+        .alt-orta-box {
+            border-left-color: #ff9800;
+        }
+        
+        .orta-box {
+            border-left-color: #2196f3;
+        }
+        
+        .ust-orta-box {
+            border-left-color: #4caf50;
+        }
+        
+        .zengin-box {
+            border-left-color: #9c27b0;
+        }
+        
+        .class-box-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .class-box-title i {
+            font-size: 1.2rem;
+        }
+        
+        .class-box-content {
+            color: #d0e0ff;
+            line-height: 1.7;
+        }
+        
+        .class-box-content ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .class-box-content li {
+            margin-bottom: 8px;
+        }
+        
+        .definitions-box {
+            background-color: rgba(40, 45, 70, 0.9);
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 30px;
+            border-left: 5px solid #64b5f6;
+        }
+        
+        .definitions-title {
+            font-size: 1.4rem;
+            color: #e3f2fd;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .definition-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed rgba(100, 150, 255, 0.2);
+        }
+        
+        .definition-item:last-child {
+            border-bottom: none;
+        }
+        
+        .definition-title {
+            font-size: 1.1rem;
+            color: #bbdefb;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .definition-text {
+            color: #d0e0ff;
+            line-height: 1.6;
+        }
+        
         /* Mobil uyumluluk */
         @media (max-width: 768px) {
             h1 {
@@ -406,6 +531,14 @@
             .subtitle {
                 font-size: 1.05rem;
             }
+            
+            .class-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .class-box {
+                padding: 15px;
+            }
         }
         
         @media (max-width: 480px) {
@@ -428,6 +561,10 @@
             
             .result-title {
                 font-size: 1.8rem;
+            }
+            
+            .class-info-container {
+                padding: 20px 15px;
             }
         }
         
@@ -455,7 +592,7 @@
     <div class="container">
         <header>
             <h1>Sosyo-Ekonomik Sınıf Testi</h1>
-           
+            <p class="subtitle">8 soruluk bu test ile gelir, birikim, konut, sağlık ve çalışma koşullarınıza göre sosyo-ekonomik sınıfınızı belirleyin</p>
         </header>
         
         <div class="test-info">
@@ -475,19 +612,19 @@
                     </div>
                     <div class="options">
                         <label class="option">
-                            <input type="radio" name="q1" value="-3" required>
+                            <input type="radio" name="q1" value="-4" required>
                             <span class="option-label">Çalışmıyorum. hiç gelirim yok. öğrenciyim veya sosyal yardımlarla, kredi-burs ile, aile veya yabancı kişilerin yardımı ile geçiniyorum. (işsizim, ev hanımıyım vb.)</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q1" value="-2">
+                            <input type="radio" name="q1" value="-3">
                             <span class="option-label">Part-time/düzensiz, güvencesiz, gündelik veya ağır-tehlikeli işlerde çalışıyorum (inşaat, madencilik vb. yüksek riskli işler)</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q1" value="2">
+                            <input type="radio" name="q1" value="0">
                             <span class="option-label">Düzenli maaşlı (asgari veya üzeri) ama GÜVENCESİZ, fiziksel olarak ağır işlerde ya da nispeten fiziksel olarak daha az ağır ama STRESLİ işlerde çalışıyorum</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q1" value="3">
+                            <input type="radio" name="q1" value="2">
                             <span class="option-label">Düzenli ve GÜVENCELİ bir işim var - fiziksel olarak hafif ama stresli işlerde çalışıyorum</span>
                         </label>
                         <label class="option">
@@ -495,7 +632,7 @@
                             <span class="option-label">fazlasıyla güvenceli ve iyi bir işte çalışıyorum. sigortam tam. yüksek maaşlı bir işim veya rahat bir iş ortamım var.</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q1" value="5">
+                            <input type="radio" name="q1" value="6">
                             <span class="option-label">dükkan-şirket, işletme vb. sahibiyim, çalışmama bile gerek kalmadan para kazandıran kendi işlerim, yatırımlarım var</span>
                         </label>
                     </div>
@@ -509,7 +646,7 @@
                     </div>
                     <div class="options">
                         <label class="option">
-                            <input type="radio" name="q2" value="-3" required>
+                            <input type="radio" name="q2" value="-4" required>
                             <span class="option-label">Hiçbir birikimim, yatırımım yok. gelirim temel ihtiyaçlar için bile yetersiz kalıyor, hiç para ayıramıyorum</span>
                         </label>
                         <label class="option">
@@ -517,15 +654,15 @@
                             <span class="option-label">Sadece acil ihtiyaçları karşılayacak kadar küçük bir birikimim ve yatırımım var, çok az para ayırabiliyorum, küçük şeyler için</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q2" value="3">
+                            <input type="radio" name="q2" value="1">
                             <span class="option-label">Birkaç aylık asgari geçim tutarını karşılayacak birikimim ve yatırımım var, orta düzeyde para ayırabiliyorum</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q2" value="5">
+                            <input type="radio" name="q2" value="3">
                             <span class="option-label">Birkaç yıllık geçimimi sağlayacak önemli birikimim, yatırımım var. gelirimden önemli miktarlarda para ayırabiliyorum</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q2" value="7">
+                            <input type="radio" name="q2" value="5">
                             <span class="option-label">Çalışmadan geçinebileceğim düzeyde birikimim, yatırımım var, gelirimin büyük kısmını tasarruf ve yatırıma ayırabiliyorum</span>
                         </label>
                     </div>
@@ -539,19 +676,19 @@
                     </div>
                     <div class="options">
                         <label class="option">
-                            <input type="radio" name="q3" value="-4" required>
+                            <input type="radio" name="q3" value="-5" required>
                             <span class="option-label">Kalacak yerim yok veya sokakta/barınakta, evsiz yurdunda kalıyorum</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q3" value="-2">
+                            <input type="radio" name="q3" value="-3">
                             <span class="option-label">Alçısız, sıvasız, rutubetli, küflü, sağlıksız bir evde kalıyorum (kiracı veya ücretsiz kalınan bir ev - aile evi, gecekondu)</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q3" value="3">
+                            <input type="radio" name="q3" value="1">
                             <span class="option-label">Mütevazı, ORTA HALLİ bir evde kalıyorum (kiracı veya aile evi, kendi evim)</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q3" value="4">
+                            <input type="radio" name="q3" value="3">
                             <span class="option-label">İyi bir Evim var - kredi ile (taksit ödeyerek) kendi evimde oturuyorum - kaliteli, iyi bir evde kiracıyım</span>
                         </label>
                         <label class="option">
@@ -573,11 +710,11 @@
                             <span class="option-label">28 bin veya altı</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q4" value="-2">
+                            <input type="radio" name="q4" value="-1">
                             <span class="option-label">28 bin ve üzeri (28 ila 55 bin arası)</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q4" value="3">
+                            <input type="radio" name="q4" value="2">
                             <span class="option-label">55 bin ve üzeri (55 ila 80 bin arası)</span>
                         </label>
                         <label class="option">
@@ -585,7 +722,7 @@
                             <span class="option-label">80 bin ve üzeri (80 ila 120 bin arası)</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q4" value="5">
+                            <input type="radio" name="q4" value="6">
                             <span class="option-label">120 bin ve üstü</span>
                         </label>
                     </div>
@@ -599,15 +736,15 @@
                     </div>
                     <div class="options">
                         <label class="option">
-                            <input type="radio" name="q5" value="-1" required>
+                            <input type="radio" name="q5" value="-2" required>
                             <span class="option-label">Hiçbir sosyal güvencem yok, sağlık hizmetlerine erişimim kısıtlı. Neredeyse hiç kırmızı et veya balık içeren yemek tüketemiyorum</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q5" value="2">
+                            <input type="radio" name="q5" value="0">
                             <span class="option-label">Temel sigortam var ama özel sağlık hizmetlerini karşılayamam, Ayda 1-2 kez kırmızı et/balık yiyebilirim.</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q5" value="3">
+                            <input type="radio" name="q5" value="2">
                             <span class="option-label">Düzenli sigortam var, maddi durumumu sarsa da özel sağlık hizmeti alabilirim. Haftada 1-2 kez kırmızı et veya balık yiyebilirim.</span>
                         </label>
                         <label class="option">
@@ -615,7 +752,7 @@
                             <span class="option-label">Tam kapsamlı özel sağlık sigortam var, en iyi sağlık hizmetlerine erişebilirim. İstediğim sıklıkta protein kaynaklarına; kırmızı ete, balığa ulaşabiliyorum.</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q5" value="5">
+                            <input type="radio" name="q5" value="6">
                             <span class="option-label">En üst düzey özel sağlık sigortalarına sahibim, yurtdışında bile tedavi olabilirim. en yüksek protein oranlarına sahip eşsiz gıdaları rahatlıkla tüketebilirim.</span>
                         </label>
                     </div>
@@ -629,7 +766,7 @@
                     </div>
                     <div class="options">
                         <label class="option">
-                            <input type="radio" name="q6" value="-2" required>
+                            <input type="radio" name="q6" value="-3" required>
                             <span class="option-label">Evet, geçmişte sokakta kaldım veya şu an bu riskle karşı karşıyayım</span>
                         </label>
                         <label class="option">
@@ -637,11 +774,11 @@
                             <span class="option-label">Şu an böyle bir risk yok ama gelirim kesilirse bu risk oluşabilir</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q6" value="3">
+                            <input type="radio" name="q6" value="1">
                             <span class="option-label">Gelirim kesilirse bir süre dayanabilirim ama uzun vadede risk var</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q6" value="4">
+                            <input type="radio" name="q6" value="3">
                             <span class="option-label">Böyle bir riskim yok, gelirim kesilse bile birikimlerimle idare edebilirim</span>
                         </label>
                         <label class="option">
@@ -663,16 +800,46 @@
                             <span class="option-label">Evet, maddi durumumdan dolayı sık sık dışlandım, insanların tiksinir bakışlarına ve tavırlarına maruz kaldım</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q7" value="-2">
+                            <input type="radio" name="q7" value="-1">
                             <span class="option-label">Evet, maddi durumumdan dolayı dışlandığım oldu ama ara sıra, yoğun olmayan bir derecede</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q7" value="4">
+                            <input type="radio" name="q7" value="2">
                             <span class="option-label">Nadir, maddi durumumdan dolayı hiç denilebilecek kadar az dışlandım veya dışlanmadım</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q7" value="5">
+                            <input type="radio" name="q7" value="4">
                             <span class="option-label">Hayır, maddi durumumdan dolayı hiç dışlanmadım, böyle bir şey yaşamadım</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Soru 8: Haftalık Çalışma Süresi -->
+                <div class="question">
+                    <div class="question-title">
+                        <span class="question-number">8</span>
+                        <span>Haftalık çalışma süreniz nedir? (çalışmıyorsanız 45 saat ve altı yanıtını seçebilirsiniz)</span>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q8" value="1" required>
+                            <span class="option-label">45 saat ve altı</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q8" value="2">
+                            <span class="option-label">45 saat ila 55 saat arası</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q8" value="-1">
+                            <span class="option-label">55 saat ila 65 saat arası</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q8" value="-2">
+                            <span class="option-label">65 saat ila 75 saat arası</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q8" value="-3">
+                            <span class="option-label">75 saat ve üzeri</span>
                         </label>
                     </div>
                 </div>
@@ -702,8 +869,130 @@
         </div>
     </div>
     
-    <footer>
+    <!-- Sınıf Bilgileri -->
+    <div class="class-info-container">
+        <h2 class="class-info-title">Sosyo-Ekonomik Sınıflar ve Çalışılan İşler</h2>
+        
+        <div class="class-grid">
+            <div class="class-box yoksul-box">
+                <h3 class="class-box-title"><i class="fas fa-hands-helping"></i> Yoksul Sınıf</h3>
+                <div class="class-box-content">
+                    <p>Bu sınıftaki kişilerin çalıştığı işler şunlardır:</p>
+                    <ul>
+                        <li>İnşaat işçisi</li>
+                        <li>Mevsimlik tarım işçisi</li>
+                        <li>Kağıt toplayıcı, hurdacı</li>
+                        <li>Merdiven-altı fabrika işçisi</li>
+                        <li>Sanayi işçisi</li>
+                        <li>Gündelikçi (yevmiyeci)</li>
+                        <li>Hamal</li>
+                        <li>Sokak satıcısı (seyyar satıcı)</li>
+                        <li>Temizlik işçisi</li>
+                        <li>Tarla işçisi</li>
+                        <li>Çaycı vb.</li>
+                    </ul>
+                    <p><strong>Not:</strong> Yoksul sınıftaki işçinin sigortası çoğu zaman yatırılmaz. Yoksul işçi haftalarca/aylarca maaş alamama sorununu sık yaşar. Rutubetli, küflü, 40-50 yıllık eski harabe evlerde yaşaması da bu sınıfa ait kişilerin sağlığını fazlasıyla kötü etkiler.</p>
+                </div>
+            </div>
+            
+            <div class="class-box alt-orta-box">
+                <h3 class="class-box-title"><i class="fas fa-user-hard-hat"></i> Alt-Orta Sınıf</h3>
+                <div class="class-box-content">
+                    <p>Bu sınıftaki kişilerin çalıştığı işler şunlardır:</p>
+                    <ul>
+                        <li>Fabrika işçisi</li>
+                        <li>Belediye işçisi</li>
+                        <li>Kasiyer</li>
+                        <li>Garson, komi</li>
+                        <li>Çağrı merkezi çalışanı</li>
+                        <li>Kurye</li>
+                        <li>Taşeron işçi</li>
+                        <li>Depo işçisi vb.</li>
+                    </ul>
+                    <p><strong>Not:</strong> Alt-orta sınıftaki işçinin sigortası genellikle düzenli yatar. Maaşı en fazla birkaç gün geç yatar, yoksul sınıfa göre daha düzenlidir.</p>
+                </div>
+            </div>
+            
+            <div class="class-box orta-box">
+                <h3 class="class-box-title"><i class="fas fa-user-tie"></i> Orta Sınıf</h3>
+                <div class="class-box-content">
+                    <p>Bu sınıftaki kişilerin çalıştığı işler şunlardır:</p>
+                    <ul>
+                        <li>Öğretmen</li>
+                        <li>Hemşire</li>
+                        <li>Muhasebeci</li>
+                        <li>Banka memuru-şube personeli</li>
+                        <li>Memur</li>
+                        <li>Eczacı (kendi eczanesi olmayan)</li>
+                        <li>Avukat (küçük büro veya şirket avukatı)</li>
+                        <li>Mimar</li>
+                        <li>İnşaat mühendisi (proje bazlı, orta ölçekli firmalarda) vb.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="class-box ust-orta-box">
+                <h3 class="class-box-title"><i class="fas fa-user-md"></i> Üst-Orta Sınıf</h3>
+                <div class="class-box-content">
+                    <p>Bu sınıftaki kişilerin çalıştığı işler şunlardır:</p>
+                    <ul>
+                        <li>Uzman doktor, diş hekimi, cerrah</li>
+                        <li>Yazılımcı</li>
+                        <li>Kurumsal bankacı-şube müdürü-bölge müdürü</li>
+                        <li>Orta veya üst düzey yönetici (müdür, departman başkanı)</li>
+                        <li>Pilot</li>
+                        <li>Şirket avukatı, hukuk müşaviri</li>
+                        <li>Üniversite öğretim üyesi (doçent/profesör)</li>
+                        <li>Orta-üst düzey kamu yöneticisi (müdür, daire başkanı)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="class-box zengin-box">
+                <h3 class="class-box-title"><i class="fas fa-crown"></i> Zengin Sınıf</h3>
+                <div class="class-box-content">
+                    <p>Bu sınıftaki kişilerin çalıştığı işler şunlardır:</p>
+                    <ul>
+                        <li>Şirket sahibi, patron</li>
+                        <li>Üst düzey yönetici-CEO, genel müdür</li>
+                        <li>Yatırımcı</li>
+                        <li>Büyük çiftlik-tarım işletmesi sahibi (modern tarım-ihracat odaklı)</li>
+                        <li>Müteahhit</li>
+                        <li>Sanatçı, oyuncu</li>
+                        <li>İhracatçı-ithalatçı (sanayi ürünleri, gıda vb.)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="definitions-box">
+            <h3 class="definitions-title"><i class="fas fa-info-circle"></i> İş Türleri Tanımları</h3>
+            
+            <div class="definition-item">
+                <div class="definition-title">Güvencesiz İş</div>
+                <div class="definition-text">İşten çıkartılma ve işsiz kalma riski çok yüksek olan işlerdir.</div>
+            </div>
+            
+            <div class="definition-item">
+                <div class="definition-title">Güvenceli İş</div>
+                <div class="definition-text">İşten çıkarılma riskinin oldukça düşük olduğu işlerdir.</div>
+            </div>
+            
+            <div class="definition-item">
+                <div class="definition-title">Düzensiz İş</div>
+                <div class="definition-text">Örnek olarak, bir hafta veya birkaç ay yoğun çalıştıktan sonra, sonraki iki hafta, iki ay hiç işin olmadığı, çalışamama durumunun yaşandığı işlere denir. İşlerde duraksama, durgunluk veya mevsimsel nedenler bu kişilerin çalışamamasına neden olur.</div>
+            </div>
+            
+            <div class="definition-item">
+                <div class="definition-title">Ağır-Tehlikeli İş</div>
+                <div class="definition-text">Ağır ve tehlikeli olarak tanımlanan işler kişinin iş kazasına bağlı olarak ölme ve yaralanma riskinin fazlasıyla yüksek olduğu işlere denir. Sadece bu işlerde çalışmak bile ciddi sağlık sorunlarına neden olabilir. Bu işlerde çalışıp iş kazası geçirmemiş, yaralanmamış kişi neredeyse hiç yoktur.</div>
+            </div>
+        </div>
+    </div>
     
+    <footer>
+        <p>Sosyo-Ekonomik Sınıf Testi | Bu test gelir, birikim, konut, sağlık ve çalışma koşullarınıza göre sosyo-ekonomik sınıfınızı belirlemek için tasarlanmıştır.</p>
+        <p>Sonuçlar genel bir değerlendirme olup, kesin bir kategori olarak değerlendirilmemelidir.</p>
     </footer>
 
     <script>
@@ -792,7 +1081,7 @@
                 return true;
             }
             
-            // Puan hesaplama (7 soru)
+            // Puan hesaplama (8 soru)
             function calculateScore() {
                 let totalScore = 0;
                 const radioInputs = document.querySelectorAll('input[type="radio"]:checked');
@@ -804,47 +1093,51 @@
                 return totalScore;
             }
             
-            // Sınıf belirleme (7 soru)
+            // Sınıf belirleme (8 soru için güncellenmiş eşik değerleri)
             function determineClass(score) {
                 let className = "";
                 let classType = "";
                 let additionalNote = "";
                 
-                // Sınıf eşikleri (7 soru için güncellendi)
-                if (score <= 0) {
+                // Sınıf eşikleri (8 soru için optimize edildi)
+                if (score <= -5) {
                     className = "Derin Yoksul / Yoksul Sınıf";
                     classType = "yoksul";
-                    if (score > -3) {
+                    additionalNote = " (Aşırı yoksulluk durumu)";
+                } else if (score <= 5) {
+                    className = "Yoksul Sınıf";
+                    classType = "yoksul";
+                    if (score > 0) {
                         additionalNote = " (Alt-Orta sınıfa yakın)";
                     }
-                } else if (score <= 10) {
+                } else if (score <= 15) {
                     className = "Alt-Orta Sınıf";
                     classType = "alt-orta";
-                    if (score < 3) {
+                    if (score < 8) {
                         additionalNote = " (Yoksul sınıfa yakın)";
-                    } else if (score > 8) {
+                    } else if (score > 12) {
                         additionalNote = " (Orta sınıfa yakın)";
                     }
-                } else if (score <= 20) {
+                } else if (score <= 25) {
                     className = "Orta Sınıf";
                     classType = "orta";
-                    if (score < 13) {
+                    if (score < 18) {
                         additionalNote = " (Alt-Orta sınıfa yakın)";
-                    } else if (score > 18) {
+                    } else if (score > 22) {
                         additionalNote = " (Üst-Orta sınıfa yakın)";
                     }
-                } else if (score <= 30) {
+                } else if (score <= 35) {
                     className = "Üst-Orta Sınıf";
                     classType = "ust-orta";
-                    if (score < 23) {
+                    if (score < 28) {
                         additionalNote = " (Orta sınıfa yakın)";
-                    } else if (score > 28) {
+                    } else if (score > 32) {
                         additionalNote = " (Zengin sınıfa yakın)";
                     }
                 } else {
                     className = "Zengin Sınıf";
                     classType = "zengin";
-                    if (score < 33) {
+                    if (score < 38) {
                         additionalNote = " (Üst-Orta sınıfa yakın)";
                     }
                 }

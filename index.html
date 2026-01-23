@@ -556,15 +556,9 @@
 <body>
     <div class="container">
         <header>
-            <h1>Sosyo-Ekonomik Sınıf Testi</h1>
+            <h1>Sınıf Testi</h1>
         </header>
         
-        <div class="test-info">
-            <p class="info-text">
-                <i class="fas fa-info-circle"></i>
-                Test tamamlandığında, kapsamlı değerlendirmeye göre ait olduğunuz sosyo-ekonomik sınıf gösterilecektir.
-            </p>
-        </div>
         
         <form id="socioEconomicTest">
             <div class="question-container">
@@ -584,11 +578,11 @@
                             <span class="option-label">Part-time/DÜZENSİZ, güvencesiz, gündelik veya ağır-tehlikeli bir işte çalışıyorum (inşaat, madencilik vb. yüksek riskli işler) veya haftalık çalışma süresi 70-75 saate varan hatta 75 saati aşan bir işte çalışıyorum.</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q1" value="0">
+                            <input type="radio" name="q1" value="-1">
                             <span class="option-label">Düzenli maaşlı (asgari veya üzeri) sigortalı ama GÜVENCESİZ, fiziksel olarak ağır işlerde ya da nispeten fiziksel olarak daha az ağır ama fazlasıyla STRESLİ bir işte çalışıyorum.</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q1" value="2">
+                            <input type="radio" name="q1" value="3">
                             <span class="option-label">Düzenli ve GÜVENCELİ bir işim var - fiziksel olarak rahat ama hafif stresli bir işte çalışıyorum.</span>
                         </label>
                         <label class="option">
@@ -614,19 +608,19 @@
                             <span class="option-label">Hiçbir birikimim, yatırımım yok. gelirim temel ihtiyaçlar için bile yetersiz kalıyor (işsizim, öğrenciyim vb.)</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q2" value="-2">
+                            <input type="radio" name="q2" value="-1">
                             <span class="option-label">Sadece acil ihtiyaçları karşılayacak kadar küçük bir birikimim ve yatırımım var - gelirimden ÇOK AZ para ayırabiliyorum, küçük şeyler için</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q2" value="1">
+                            <input type="radio" name="q2" value="2">
                             <span class="option-label">Birkaç aylık asgari geçim tutarını karşılayacak birikimim ve yatırımım var, gelirimden ALT-ORTA düzeyde bir para ayırabiliyorum</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q2" value="3">
+                            <input type="radio" name="q2" value="4">
                             <span class="option-label">Birkaç yıllık geçimimi sağlayacak önemli birikimim, yatırımım var. gelirimden önemli miktarlarda para ayırabiliyorum</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q2" value="5">
+                            <input type="radio" name="q2" value="6">
                             <span class="option-label">Çalışmadan geçinebileceğim düzeyde birikimim, yatırımım var. gelirimin büyük kısmını tasarruf ve yatırıma ayırabiliyorum</span>
                         </label>
                     </div>
@@ -648,7 +642,7 @@
                             <span class="option-label">Alçısız, sıvasız, rutubetli, küflü, sağlıksız bir evde kalıyorum (kiracı veya ücretsiz kalınan bir ev - aile evi, gecekondu)</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q3" value="2">
+                            <input type="radio" name="q3" value="3">
                             <span class="option-label">Mütevazı, ORTA HALLİ bir evde kalıyorum (kiracı veya ücretsiz kalınan bir ev - aile evi, kendi evim)</span>
                         </label>
                         <label class="option">
@@ -678,7 +672,7 @@
                             <span class="option-label">Bireysel gelir; 28 bin ve üzeri (28 ila 65 bin arası) - Hanehalkı geliri 2 veya 3 asgari ücret altı/üstü</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q4" value="2">
+                            <input type="radio" name="q4" value="3">
                             <span class="option-label">Bireysel gelir; 65 bin ve üzeri (65 ila 110 bin arası) - Hanehalkı geliri 3 veya 4 asgari ücret altı/üstü</span>
                         </label>
                         <label class="option">
@@ -704,7 +698,7 @@
                             <span class="option-label">Hiçbir sosyal güvencem yok - sağlık hizmetlerine erişimim hem özelde hem devlette fazlasıyla kısıtlı - maaşım ve sigortam aşırı düzensiz olduğu için sağlık hizmetlerine erişimim imkansıza yakın</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q5" value="1">
+                            <input type="radio" name="q5" value="-1">
                             <span class="option-label">Devlet kurumlarında sağlık hizmetlerine erişebilsem de ÖZEL SAĞLIK HİZMETLERİNE erişimim imkansız sayılır</span>
                         </label>
                         <label class="option">
@@ -738,15 +732,15 @@
                             <span class="option-label">Şu an böyle bir risk yok ama gelirim kesilirse bu risk oluşabilir (sokakta kaldım/kalmadım)</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q6" value="1">
+                            <input type="radio" name="q6" value="2">
                             <span class="option-label">Gelirim kesilirse bir süre dayanabilirim ama uzun vadede risk var (sokakta kaldım/kalmadım)</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q6" value="3">
+                            <input type="radio" name="q6" value="4">
                             <span class="option-label">Böyle bir riskim yok. gelirim kesilse bile birikimlerimle, yatırımlarımla, mülkümle uzun bir süre idare edebilirim</span>
                         </label>
                         <label class="option">
-                            <input type="radio" name="q6" value="5">
+                            <input type="radio" name="q6" value="6">
                             <span class="option-label">Hiçbir şekilde böyle bir riskim yok. mülklerim, yatırımlarım, birikimlerim beni korur</span>
                         </label>
                     </div>
@@ -858,7 +852,7 @@
                         <li>Mimar</li>
                         <li>Banka memuru-şube personeli</li>
                         <li>Avukat (küçük büro veya şirket avukatı)</li>
-                        <li>İnşaat mühendisi (proje bazlı, orta ölçekli firmalarda) vb.</li>
+                        <li>İnşaat mühendisi (proje bazlı) vb.</li>
                     </ul>
                 </div>
             </div>
@@ -888,7 +882,6 @@
                         <li>Üst düzey yönetici-CEO, genel müdür</li>
                         <li>Yatırımcı</li>
                         <li>Müteahhit</li>
-                        <li>Sanatçı, oyuncu</li>
                         <li>İhracatçı-ithalatçı (sanayi ürünleri, gıda) vb.</li>
                     </ul>
                 </div>

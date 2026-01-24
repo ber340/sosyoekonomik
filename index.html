@@ -14,51 +14,37 @@
         }
         
         body {
-            background-color: #0a0a0a;
-            color: #e0e0e0;
+            background-color: #ffffff; /* BEYAZ */
+            color: #000000; /* SİYAH */
             line-height: 1.6;
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
-            background-image: radial-gradient(circle at 15% 50%, rgba(30, 30, 60, 0.7) 0%, transparent 20%), 
-                              radial-gradient(circle at 85% 30%, rgba(60, 30, 60, 0.5) 0%, transparent 20%);
         }
         
         .container {
-            background-color: rgba(20, 20, 30, 0.9);
+            background-color: #ffffff; /* BEYAZ */
             border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             margin-bottom: 30px;
-            border: 1px solid rgba(100, 100, 150, 0.1);
-            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, 0.1);
         }
         
         header {
-            background: linear-gradient(135deg, #0f1a2b 0%, #1a2b3c 50%, #0f1a2b 100%);
-            color: #ffffff;
+            background: #f8f8f8; /* AÇIK GRİ */
+            color: #000000; /* SİYAH */
             padding: 35px 20px;
             text-align: center;
-            border-bottom: 2px solid rgba(100, 150, 255, 0.2);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
             position: relative;
             overflow: hidden;
-        }
-        
-        header::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, transparent, rgba(100, 150, 255, 0.5), transparent);
         }
         
         h1 {
             font-size: 2.5rem;
             margin-bottom: 15px;
-            color: #ffffff;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            color: #000000; /* SİYAH */
             letter-spacing: 0.5px;
         }
         
@@ -67,14 +53,14 @@
             opacity: 0.85;
             max-width: 800px;
             margin: 0 auto;
-            color: #b0c4de;
+            color: #333333; /* KOYU GRİ */
             line-height: 1.7;
         }
         
         .test-info {
             padding: 25px 20px;
-            background-color: rgba(30, 40, 60, 0.7);
-            border-bottom: 1px solid rgba(100, 100, 150, 0.3);
+            background-color: #f0f0f0; /* AÇIK GRİ */
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         }
         
         .info-text {
@@ -83,12 +69,12 @@
             justify-content: center;
             gap: 12px;
             font-size: 1.05rem;
-            color: #d0e0ff;
+            color: #333333; /* KOYU GRİ */
             text-align: center;
         }
         
         .info-text i {
-            color: #64b5f6;
+            color: #555555; /* GRİ */
             font-size: 1.2rem;
         }
         
@@ -99,12 +85,8 @@
         .question {
             margin-bottom: 35px;
             padding-bottom: 30px;
-            border-bottom: 1px dashed rgba(100, 150, 255, 0.2);
-            transition: transform 0.3s ease;
-        }
-        
-        .question:hover {
-            transform: translateX(5px);
+            border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+            /* Hover efekti kaldırıldı */
         }
         
         .question:last-of-type {
@@ -114,7 +96,7 @@
         .question-title {
             font-size: 1.35rem;
             margin-bottom: 18px;
-            color: #e3f2fd;
+            color: #000000; /* SİYAH */
             display: flex;
             align-items: flex-start;
             gap: 12px;
@@ -122,7 +104,7 @@
         }
         
         .question-number {
-            background: linear-gradient(135deg, #2196f3, #1976d2);
+            background: #000000; /* SİYAH */
             color: white;
             width: 34px;
             height: 34px;
@@ -132,7 +114,7 @@
             justify-content: center;
             flex-shrink: 0;
             font-weight: 700;
-            box-shadow: 0 3px 5px rgba(33, 150, 243, 0.3);
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
         }
         
         .options {
@@ -145,47 +127,27 @@
             display: flex;
             align-items: center;
             padding: 18px;
-            background-color: rgba(40, 45, 70, 0.7);
+            background-color: #f8f8f8; /* AÇIK GRİ */
             border-radius: 10px;
-            border: 1px solid rgba(100, 100, 150, 0.3);
+            border: 1px solid rgba(0, 0, 0, 0.1);
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: none; /* Hover efekti kaldırıldı */
             position: relative;
             overflow: hidden;
         }
         
-        .option::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 0;
-            background: rgba(100, 150, 255, 0.1);
-            transition: width 0.3s ease;
-            z-index: 0;
-        }
-        
-        .option:hover::before {
-            width: 100%;
-        }
-        
+        /* Hover efekti kaldırıldı */
         .option:hover {
-            background-color: rgba(50, 55, 80, 0.8);
-            border-color: rgba(100, 150, 255, 0.5);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            background-color: #f8f8f8; /* Aynı kalacak */
+            border-color: rgba(0, 0, 0, 0.1);
+            transform: none; /* Hareket kaldırıldı */
+            box-shadow: none; /* Gölge kaldırıldı */
         }
         
         .option.selected {
-            background-color: rgba(30, 70, 120, 0.8);
-            border-color: #2196f3;
-            box-shadow: 0 0 0 1px rgba(33, 150, 243, 0.3), 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
-        
-        .option.selected::before {
-            background: rgba(33, 150, 243, 0.15);
-            width: 100%;
+            background-color: #e0e0e0; /* SEÇİLİ ARKA PLAN */
+            border-color: #000000; /* SİYAH */
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
         }
         
         .option input {
@@ -197,7 +159,7 @@
         
         .option-label {
             font-size: 1.05rem;
-            color: #e3f2fd;
+            color: #000000; /* SİYAH */
             z-index: 1;
             flex: 1;
             line-height: 1.5;
@@ -208,8 +170,8 @@
             justify-content: center;
             gap: 25px;
             padding: 25px;
-            background-color: rgba(30, 40, 60, 0.7);
-            border-top: 1px solid rgba(100, 100, 150, 0.3);
+            background-color: #f0f0f0; /* AÇIK GRİ */
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
         }
         
         .btn {
@@ -219,7 +181,7 @@
             font-size: 1.15rem;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: none; /* Hover efekti kaldırıldı */
             display: flex;
             align-items: center;
             gap: 12px;
@@ -228,39 +190,20 @@
             overflow: hidden;
         }
         
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(rgba(255,255,255,0.1), transparent);
-            z-index: -1;
-        }
-        
         .btn-submit {
-            background: linear-gradient(to right, #2e7d32, #388e3c);
+            background: #000000; /* SİYAH */
             color: white;
-            box-shadow: 0 4px 10px rgba(46, 125, 50, 0.3);
-        }
-        
-        .btn-submit:hover {
-            background: linear-gradient(to right, #1b5e20, #2e7d32);
-            transform: translateY(-3px);
-            box-shadow: 0 7px 14px rgba(46, 125, 50, 0.4);
         }
         
         .btn-reset {
-            background: linear-gradient(to right, #546e7a, #455a64);
-            color: #e0e0e0;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            background: #555555; /* GRİ */
+            color: #ffffff; /* BEYAZ */
         }
         
-        .btn-reset:hover {
-            background: linear-gradient(to right, #455a64, #37474f);
-            transform: translateY(-3px);
-            box-shadow: 0 7px 14px rgba(0, 0, 0, 0.3);
+        /* Hover efektleri kaldırıldı */
+        .btn-submit:hover, .btn-reset:hover {
+            transform: none;
+            box-shadow: none;
         }
         
         .result-container {
@@ -281,14 +224,13 @@
         
         .result-title {
             font-size: 2.3rem;
-            color: #e3f2fd;
+            color: #000000; /* SİYAH */
             margin-bottom: 15px;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
         
         .result-subtitle {
             font-size: 1.2rem;
-            color: #b0c4de;
+            color: #333333; /* KOYU GRİ */
             max-width: 700px;
             margin: 0 auto;
         }
@@ -300,11 +242,12 @@
             padding: 25px;
             border-radius: 15px;
             text-align: center;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             background-size: 400% 400%;
             animation: gradientShift 8s ease infinite;
             letter-spacing: 1px;
+            color: #000000; /* SİYAH */
         }
         
         @keyframes gradientShift {
@@ -314,39 +257,34 @@
         }
         
         .yoksul {
-            background: linear-gradient(135deg, #7b1fa2, #c2185b, #7b1fa2);
-            color: #f8bbd9;
-            border-left: 8px solid #c2185b;
+            background: linear-gradient(135deg, #cccccc, #999999, #cccccc);
+            border-left: 8px solid #999999;
         }
         
         .alt-orta {
-            background: linear-gradient(135deg, #f57c00, #ff9800, #f57c00);
-            color: #ffe0b2;
-            border-left: 8px solid #ff9800;
+            background: linear-gradient(135deg, #aaaaaa, #888888, #aaaaaa);
+            border-left: 8px solid #888888;
         }
         
         .orta {
-            background: linear-gradient(135deg, #1976d2, #2196f3, #1976d2);
-            color: #bbdefb;
-            border-left: 8px solid #2196f3;
+            background: linear-gradient(135deg, #888888, #666666, #888888);
+            border-left: 8px solid #666666;
         }
         
         .ust-orta {
-            background: linear-gradient(135deg, #388e3c, #4caf50, #388e3c);
-            color: #c8e6c9;
-            border-left: 8px solid #4caf50;
+            background: linear-gradient(135deg, #666666, #444444, #666666);
+            border-left: 8px solid #444444;
         }
         
         .zengin {
-            background: linear-gradient(135deg, #6a1b9a, #9c27b0, #6a1b9a);
-            color: #e1bee7;
-            border-left: 8px solid #9c27b0;
+            background: linear-gradient(135deg, #444444, #222222, #444444);
+            border-left: 8px solid #222222;
         }
         
         .restart-btn {
             display: block;
             margin: 40px auto 0;
-            background: linear-gradient(to right, #1976d2, #0d47a1);
+            background: #000000; /* SİYAH */
             color: white;
             padding: 18px 45px;
             border: none;
@@ -354,42 +292,39 @@
             font-size: 1.2rem;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s;
-            box-shadow: 0 6px 15px rgba(25, 118, 210, 0.3);
+            transition: none; /* Hover efekti kaldırıldı */
         }
         
         .restart-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(25, 118, 210, 0.4);
-            background: linear-gradient(to right, #1565c0, #0d47a1);
+            transform: none;
         }
         
         footer {
             text-align: center;
             padding: 25px;
-            color: #90a4ae;
+            color: #666666; /* GRİ */
             font-size: 0.95rem;
             margin-top: 30px;
-            border-top: 1px solid rgba(100, 100, 150, 0.2);
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
             line-height: 1.7;
         }
         
         /* Sınıf Bilgi Kutuları */
         .class-info-container {
             padding: 30px 20px;
-            background-color: rgba(25, 30, 45, 0.9);
+            background-color: #f8f8f8; /* AÇIK GRİ */
             margin-top: 30px;
             border-radius: 12px;
-            border: 1px solid rgba(100, 150, 255, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.1);
         }
         
         .class-info-title {
             font-size: 1.8rem;
-            color: #e3f2fd;
+            color: #000000; /* SİYAH */
             margin-bottom: 25px;
             text-align: center;
             padding-bottom: 15px;
-            border-bottom: 2px solid rgba(100, 150, 255, 0.3);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.3);
         }
         
         .class-grid {
@@ -400,47 +335,48 @@
         }
         
         .class-box {
-            background-color: rgba(35, 40, 60, 0.8);
+            background-color: #ffffff; /* BEYAZ */
             border-radius: 10px;
             padding: 20px;
             border-left: 5px solid;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: none; /* Hover efekti kaldırıldı */
         }
         
+        /* Hover efekti kaldırıldı */
         .class-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transform: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         }
         
         .yoksul-box {
-            border-left-color: #c2185b;
+            border-left-color: #999999;
         }
         
         .alt-orta-box {
-            border-left-color: #ff9800;
+            border-left-color: #888888;
         }
         
         .orta-box {
-            border-left-color: #2196f3;
+            border-left-color: #666666;
         }
         
         .ust-orta-box {
-            border-left-color: #4caf50;
+            border-left-color: #444444;
         }
         
         .zengin-box {
-            border-left-color: #9c27b0;
+            border-left-color: #222222;
         }
         
         .notlar-box {
-            border-left-color: #64b5f6;
+            border-left-color: #555555;
         }
         
         .class-box-title {
             font-size: 1.3rem;
             margin-bottom: 15px;
-            color: #ffffff;
+            color: #000000; /* SİYAH */
             display: flex;
             align-items: center;
             gap: 10px;
@@ -451,7 +387,7 @@
         }
         
         .class-box-content {
-            color: #d0e0ff;
+            color: #333333; /* KOYU GRİ */
             line-height: 1.7;
         }
         
@@ -532,25 +468,6 @@
                 padding: 20px 15px;
             }
         }
-        
-        /* Scrollbar stil */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-        
-        ::-webkit-scrollbar-track {
-            background: rgba(30, 30, 50, 0.5);
-            border-radius: 5px;
-        }
-        
-        ::-webkit-scrollbar-thumb {
-            background: rgba(100, 150, 255, 0.5);
-            border-radius: 5px;
-        }
-        
-        ::-webkit-scrollbar-thumb:hover {
-            background: rgba(100, 150, 255, 0.7);
-        }
     </style>
 </head>
 <body>
@@ -558,7 +475,6 @@
         <header>
             <h1>Sosyo-Ekonomik Sınıf Testi</h1>
         </header>
-        
         
         <form id="socioEconomicTest">
             <div class="question-container">
@@ -605,7 +521,7 @@
                     <div class="options">
                         <label class="option">
                             <input type="radio" name="q2" value="-2.5" required>
-                            <span class="option-label">Hiçbir birikimim, yatırımım yok - gelirim temel ihtiyaçlarım için bile yetersiz kalıyor (işsizim, öğrenciyim vb.)</span>
+                            <span class="option-label">Hiçbir birikimim, yatırımım yok - gelirim temel ihtiyaçlarım için bile yetersil kalıyor (işsizim, öğrenciyim vb.)</span>
                         </label>
                         <label class="option">
                             <input type="radio" name="q2" value="-1">
@@ -716,58 +632,32 @@
                     </div>
                 </div>
                 
-                <!-- Soru 6: Temel Yaşam Güvenliği (Sokakta Kalma Riski) -->
+                <!-- Soru 6: GÜNCELLENMİŞ - Barınma Güvenliği ve Sosyal Dışlanma -->
                 <div class="question">
                     <div class="question-title">
                         <span class="question-number">6</span>
-                        <span>Geçmişte sokakta kalmak zorunda kaldınız mı veya şu an böyle bir riskiniz var mı?</span>
+                        <span>Maddi durumunuzla bağlantılı olarak barınma güvenliğiniz (sokakta kalma riskiniz) ve sosyal dışlanma deneyimleriniz konusunda durumunuzu en iyi anlatan seçenek hangisidir?</span>
                     </div>
                     <div class="options">
                         <label class="option">
                             <input type="radio" name="q6" value="-5" required>
-                            <span class="option-label">Evet, geçmişte sokakta kaldım - şu an bu riskle karşı karşıyayım</span>
+                            <span class="option-label">Geçmişte sokakta kaldım - şu an da bu riskle karşı karşıyayım - {maddi durumumdan dolayı sık sık dışlandım, insanların tiksinir bakışlarına ve tavırlarına maruz kaldım ya da maddi durumumdan dolayı dışlandığım oldu ama bu ara sıra, yoğun olmayan bir şekilde yaşandı}</span>
                         </label>
                         <label class="option">
                             <input type="radio" name="q6" value="-2">
-                            <span class="option-label">Şu an böyle bir risk yok ama gelirim kesilirse bu risk oluşabilir (sokakta kaldım/kalmadım)</span>
+                            <span class="option-label">Şu an sokakta kalma riskim yok ama gelirim kesilirse bu risk ciddi bir şekilde oluşabilir (geçmişte sokakta kaldım/kalmadım) - {maddi durumumdan dolayı sık sık dışlandım, insanların tiksinir bakışlarına ve tavırlarına maruz kaldım ya da maddi durumumdan dolayı dışlandığım oldu ama bu ara sıra, yoğun olmayan bir şekilde - çok az - yaşandı}</span>
                         </label>
                         <label class="option">
                             <input type="radio" name="q6" value="3">
-                            <span class="option-label">Gelirim kesilirse bir süre dayanabilirim ama uzun vadede risk var (sokakta kaldım/kalmadım)</span>
+                            <span class="option-label">Gelirim kesilirse bir süre dayanabilirim ama uzun vadede sokakta kalma riskim var (geçmişte sokakta kaldım/kalmadım) {maddi durumumdan dolayı sık sık dışlandım, insanların tiksinir bakışlarına ve tavırlarına maruz kaldım ya da maddi durumumdan dolayı dışlandığım oldu ama bu ara sıra, yoğun olmayan bir şekilde yaşandı - maddi durumumdan dolayı neredeyse hiç dışlanmadım}</span>
                         </label>
                         <label class="option">
                             <input type="radio" name="q6" value="4">
-                            <span class="option-label">Böyle bir riskim yok. gelirim kesilse bile birikimlerimle, yatırımlarımla, mülkümle uzun bir süre idare edebilirim</span>
+                            <span class="option-label">Gelirim kesilirse bile birikimlerim, yatırımlarım ve mülkümle bir süre idare edebilirim- sokakta kalma riskim yok veya çok uzak. {maddi durumumdan dolayı dışlandığım oldu ama bu ara sıra, yoğun olmayan bir şekilde - çok az - yaşandı - maddi durumumdan dolayı neredeyse hiç dışlanmadım}</span>
                         </label>
                         <label class="option">
                             <input type="radio" name="q6" value="6">
-                            <span class="option-label">Hiçbir şekilde böyle bir riskim yok. mülklerim, yatırımlarım, birikimlerim beni korur</span>
-                        </label>
-                    </div>
-                </div>
-                
-                <!-- Soru 7: Sosyal Dışlanma -->
-                <div class="question">
-                    <div class="question-title">
-                        <span class="question-number">7</span>
-                        <span>Sosyal dışlanma durumunuz nedir, daha önce hiç sosyal dışlanma yaşadınız mı?</span>
-                    </div>
-                    <div class="options">
-                        <label class="option">
-                            <input type="radio" name="q7" value="-3" required>
-                            <span class="option-label">Evet, maddi durumumdan dolayı sık sık dışlandım, insanların tiksinir bakışlarına ve tavırlarına maruz kaldım</span>
-                        </label>
-                        <label class="option">
-                            <input type="radio" name="q7" value="-1">
-                            <span class="option-label">Evet, maddi durumumdan dolayı dışlandığım oldu ama ara sıra, yoğun olmayan bir şekilde</span>
-                        </label>
-                        <label class="option">
-                            <input type="radio" name="q7" value="2">
-                            <span class="option-label">Nadir, maddi durumumdan dolayı yok denilebilecek kadar az dışlandım</span>
-                        </label>
-                        <label class="option">
-                            <input type="radio" name="q7" value="4">
-                            <span class="option-label">Hayır, maddi durumumdan dolayı hiç dışlanmadım, böyle bir şey yaşamadım</span>
+                            <span class="option-label">Mülklerim, yatırımlarım, sağlam birikimlerim beni korudu ve koruyor. sokakta kalma gibi bir risk söz konusu bile değil. {Maddi durumumdan dolayı hiç sosyal dışlanma yaşamadım}</span>
                         </label>
                     </div>
                 </div>
@@ -798,7 +688,8 @@
     </div>
     
     <!-- Sınıf Bilgileri -->
-    
+    <div class="class-info-container">
+        <h2 class="class-info-title">Sosyo-Ekonomik Sınıflar Hakkında Bilgi</h2>
         <div class="class-grid">
             <div class="class-box yoksul-box">
                 <h3 class="class-box-title"><i class="fas fa-hands-helping"></i> Yoksul Sınıf</h3>
@@ -884,7 +775,12 @@
                     </ul>
                 </div>
             </div>
-
+        </div>
+    </div>
+    
+    <footer>
+        <p>Bu test, sosyo-ekonomik durumunuzu değerlendirmek için tasarlanmıştır. Sonuçlar kesin bir yargı oluşturmamalı, yalnızca genel bir fikir vermelidir.</p>
+    </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -926,7 +822,7 @@
                 // Puanları hesapla
                 const score = calculateScore();
                 
-                // Sonucu belirle
+                // Sonucu belirle (6 SORU İÇİN GÜNCELLENDİ)
                 const result = determineClass(score);
                 
                 // Sonuçları göster
@@ -972,7 +868,7 @@
                 return true;
             }
             
-            // Puan hesaplama (7 soru)
+            // Puan hesaplama (6 SORU)
             function calculateScore() {
                 let totalScore = 0;
                 const radioInputs = document.querySelectorAll('input[type="radio"]:checked');
@@ -984,51 +880,51 @@
                 return totalScore;
             }
             
-            // Sınıf belirleme (7 soru için güncellenmiş eşik değerleri)
+            // Sınıf belirleme (6 SORU İÇİN GÜNCELLENMİŞ EŞİK DEĞERLERİ)
             function determineClass(score) {
                 let className = "";
                 let classType = "";
                 let additionalNote = "";
                 
-                // 7 soru için yeni eşik değerleri
-                if (score <= -8) {
+                // 6 soru için yeni eşik değerleri
+                if (score <= -7) {
                     className = "Derin Yoksul / Yoksul Sınıf";
                     classType = "yoksul";
                     additionalNote = " (Aşırı yoksulluk durumu)";
                 } else if (score <= 3) {
                     className = "Yoksul Sınıf";
                     classType = "yoksul";
-                    if (score > 0) {
+                    if (score > -7) {
                         additionalNote = " (Alt-Orta sınıfa yakın)";
                     }
-                } else if (score <= 13) {
+                } else if (score <= 12) {
                     className = "Alt-Orta Sınıf";
                     classType = "alt-orta";
-                    if (score < 6) {
+                    if (score < 5) {
                         additionalNote = " (Yoksul sınıfa yakın)";
                     } else if (score > 10) {
                         additionalNote = " (Orta sınıfa yakın)";
                     }
-                } else if (score <= 23) {
+                } else if (score <= 21) {
                     className = "Orta Sınıf";
                     classType = "orta";
-                    if (score < 16) {
+                    if (score < 15) {
                         additionalNote = " (Alt-Orta sınıfa yakın)";
-                    } else if (score > 20) {
+                    } else if (score > 19) {
                         additionalNote = " (Üst-Orta sınıfa yakın)";
                     }
-                } else if (score <= 33) {
+                } else if (score <= 30) {
                     className = "Üst-Orta Sınıf";
                     classType = "ust-orta";
-                    if (score < 26) {
+                    if (score < 24) {
                         additionalNote = " (Orta sınıfa yakın)";
-                    } else if (score > 30) {
+                    } else if (score > 28) {
                         additionalNote = " (Zengin sınıfa yakın)";
                     }
                 } else {
                     className = "Zengin Sınıf";
                     classType = "zengin";
-                    if (score < 36) {
+                    if (score < 34) {
                         additionalNote = " (Üst-Orta sınıfa yakın)";
                     }
                 }
